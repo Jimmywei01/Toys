@@ -148,9 +148,9 @@ export default {
     getOrders (page = 1) {
       const api = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/admin/orders?page=${page}`
       const vm = this
-      vm.isLoading = true
+      // vm.isLoading = true
       vm.$http.get(api).then((res) => {
-        vm.isLoading = false
+        // vm.isLoading = false
         vm.orders = res.data.orders
         vm.pagination = res.data.pagination
       })

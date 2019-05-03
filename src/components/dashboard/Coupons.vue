@@ -145,12 +145,12 @@ export default {
       const api = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/admin/coupons?page=${page}`
       const vm = this
       vm.isLoading = true
-      vm.$store.dispatch('updateLoading', true)
       vm.$http.get(api).then((res) => {
-        vm.isLoading = false
-        vm.$store.dispatch('updateLoading', false)
-        vm.coupons = res.data.coupons
-        vm.pagination = res.data.pagination
+        if (res.data.success) {
+          vm.isLoading = false
+          vm.coupons = res.data.coupons
+          vm.pagination = res.data.pagination
+        }
       })
     },
     openModal (isNew, item) {
