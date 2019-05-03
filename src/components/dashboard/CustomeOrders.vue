@@ -296,7 +296,6 @@ export default {
       this.$validator.validate().then((result) => {
         if (result) {
           vm.$http.post(api, { data: order }).then((res) => {
-            console.log('訂單建立', res)
             if (res.data.success) {
               vm.$bus.$emit('message:Push', res.data.message, 'success')
               // 轉到 customecheckout 頁面(專屬訂單id結帳)
@@ -305,7 +304,6 @@ export default {
           })
         } else {
           vm.isLoading = false
-          console.log('欄位不完整')
         }
       })
     }

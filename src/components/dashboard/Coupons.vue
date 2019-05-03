@@ -188,11 +188,9 @@ export default {
         if (res.data.success) {
           $('#productModal').modal('hide')
           vm.getCoupons()
-          console.log('新增成功')
         } else {
           $('#productModal').modal('hide')
           vm.getCoupons()
-          console.log('新增失敗')
         }
       })
     },

@@ -219,12 +219,10 @@ export default {
           $('#productModal').modal('hide')
           vm.$bus.$emit('message:Push', response.data.message, 'success')
           vm.getProducts()
-          console.log('新增成功')
         } else {
           $('#productModal').modal('hide')
           vm.$bus.$emit('message:Push', response.data.message, 'danger')
           vm.getProducts()
-          console.log('新增失敗')
         }
       })
     },

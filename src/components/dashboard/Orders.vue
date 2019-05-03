@@ -179,11 +179,9 @@ export default {
         if (res.data.success) {
           $('#productModal').modal('hide')
           vm.getOrders()
-          console.log('已更新訂單資訊')
         } else {
           $('#productModal').modal('hide')
           vm.getOrders()
-          console.log('更新訂單失敗')
         }
       })
     },
