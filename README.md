@@ -1,4 +1,4 @@
-# CLAY TOYS
+# CLAY TOYS 商店
 
 ![首頁](https://jimmywei01.github.io/Toys/dist/img/demo/demo1.png "首頁畫面")
 
@@ -7,16 +7,16 @@ https://jimmywei01.github.io/Toys/dist/#/
 
 ## 簡介
 
-+ 前台: 商品介紹、商品分類、商品細項展示，購物車功能、訂單列表、結帳資訊
++ 前台: 商品介紹、商品分類、商品細項、購物車功能、訂單列表、結帳資訊
 + 後台: 商品管理（新增/修改/刪除）、訂單管理、優惠券管理
 
 ### 主要練習
-+ VueCli3.0
-+ VueRouter
++ Vue Cli 3.0
++ Vue Router
 + Vuex
 + Webpack
 + axios 操作 API
-+ Bootstrap 4 + 手刻 SCSS 的混合應用
++ Bootstrap 4 + 手刻 SCSS 混合應用
 + RWD
 
 ## 使用外掛
