@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow context">
       <router-link to="/" class="navbar-brand col-sm-3 col-md-2 mr-0">CLAY TOYS</router-link>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">

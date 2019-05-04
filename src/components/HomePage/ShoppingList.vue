@@ -56,7 +56,8 @@ export default {
     return {
       isLoading: false,
       optionNum: '',
-      product: {}
+      product: {},
+      submit: false
     }
   },
   methods: {
