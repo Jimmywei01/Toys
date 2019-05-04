@@ -42,12 +42,13 @@ https://jimmywei01.github.io/Toys/dist/#/
 ![](https://jimmywei01.github.io/Toys/dist/img/demo/demo5.png)
 
 ## 後台內容介紹
-- 商品基本新增刪功能
+### 商品基本新增/刪功/修改
+- 使用 Bootstrap 4 搭建後台，管理前台所需資料內容 
 ![](https://jimmywei01.github.io/Toys/dist/img/demo/demo6.png)
 
 ## Statement
 本作品的文字內容及圖片，純為個人前端網頁技術練習，不做任何商業行為
 
 ## Source
-google
-圖片版權屬於 SideShow、Hot Toys、Quora、POPBEE、io9 所有
++ Google
++ 圖片版權屬於 SideShow、Hot Toys、Quora、POPBEE、io9 所有
