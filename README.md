@@ -42,7 +42,7 @@ https://jimmywei01.github.io/Toys/dist/#/
 ![](https://jimmywei01.github.io/Toys/dist/img/demo/demo5.png)
 
 ## 後台內容介紹
-### 商品基本新增/刪功/修改
+### 商品基本新增/刪除/修改
 - 使用 Bootstrap 4 搭建後台，管理前台所需資料內容 
 ![](https://jimmywei01.github.io/Toys/dist/img/demo/demo6.png)
 
