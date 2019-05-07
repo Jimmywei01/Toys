@@ -48,7 +48,6 @@ export default {
     const vm = this
     // $on 自定義名稱 message:Push 的方法
     // message: 傳入參數
-    // status: bs4樣式，預設值為 warning
     vm.$bus.$on('message:Push', (message, status = 'warning') => {
       vm.updateMessage(message, status)
     })

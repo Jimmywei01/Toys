@@ -4,7 +4,7 @@
     <div class="hero_collection">
       <p>英雄集合</p>
     </div>
-    <div class="col-md-12 menu">
+    <div class="row menu">
       <div class="col-md-4 menu-heros" @click.prevent="changeTabe('All Heros')">
         <span>All Heros</span>
       </div>
@@ -15,7 +15,7 @@
         <span>Marvel</span>
       </div>
     </div>
-    <div class="row">
+    <div class="row filterData">
       <div class="col-md-4" v-for="item in filterData" :key="item.id">
         <div class="card border-0 shadow-sm">
           <div style="height: 150px; background-size: cover;"
@@ -148,12 +148,18 @@ p {
   background-color: #17a2b8;
 }
 
-.row {
+.menu {
   max-width: 1200px;
+  margin: 0;
   .col-md-4 {
     margin-bottom: 1.5rem;
   }
 }
+
+.filterData > .col-md-4 {
+  margin-bottom: 1.5rem;
+}
+
 .card {
   margin: 0 auto;
   height: 300px;
@@ -182,12 +188,13 @@ p {
   .menu {
     max-width: 100%;
     .menu-heros {
-      margin: 1rem 0;
       max-width: 100%;
+      padding: 1rem;
+      margin: 1rem;
     }
   }
 
-  .row > .col-md-4 {
+  .filterData > .col-md-4 {
     padding: 1.5rem;
     margin-bottom: 0;
   }

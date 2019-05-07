@@ -4,6 +4,8 @@ import cartModule from './cart'
 import productModule from './product'
 Vue.use(Vuex)
 
+Vue.prototype.$bus = new Vue()
+
 export default new Vuex.Store({
   strict: true,
   state: {

@@ -3,7 +3,7 @@
           <div class="hero_collection">
         <p>英雄詳解</p>
       </div>
-    <div class="col-md-12 detail clearfix">
+    <div class="row detail">
       <div class="col-md-7 detail-left">
         <img :src='item.imageUrl' class="img-fluid" alt="">
       </div>
@@ -112,6 +112,7 @@ p {
 }
 .detail-right {
     background-color: #f4f4f4;
+    height: 50%;
     > p {
       padding-top: 1rem;
     }

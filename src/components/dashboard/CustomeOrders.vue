@@ -4,7 +4,7 @@
     <div class="row mt-4">
       <div class="col-md-4 mb-4" v-for="item in products" :key="item.id">
         <div class="card border-0 shadow-sm">
-          <div style="height: 150px; background-size: cover; background-position: center"
+          <div style="height: 150px; background-size: cover;"
             :style="{backgroundImage : `url(${item.imageUrl})`}">
           </div>
           <div class="card-body">
@@ -314,3 +314,23 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.card {
+  margin: 0 auto;
+  height: 300px;
+  .card-body {
+    padding: 0.2rem;
+  }
+  .card-footer {
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+.card-title {
+  margin-bottom: 0.3rem;
+}
+.card-text {
+  margin-bottom: 0.3rem;
+}
+</style>

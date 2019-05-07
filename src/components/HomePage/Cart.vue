@@ -3,13 +3,16 @@
       <div class="hero_collection">
         <p>英雄訂單</p>
       </div>
-      <div class="col-md-12 cart-row">
+        <div class="hero_collection-choice" v-if="carts.length == 0">
+          <div class="text-center h3 mt-5 text-secondary text-danger" >目前尚未選購商品</div>
+          <button type="button" class="btn btn-info" @click="goShop">
+            前往購物
+          </button>
+        </div>
+        <div class="row cart-row">
         <div class="col-md-8 cart-row-product">
-          <div class="text-center h3 mt-4 text-secondary text-danger" v-if="carts.length == 0">
-                目前尚未選購商品
-          </div>
           <div class="list-item row" v-for="(item, index) in carts" :key="index">
-            <div class="cart-row-product_img col-md-6">
+            <div class=" col-md-6 cart-row-product_img">
               <div class="img-item" :style="`background-image: url(${item.product.imageUrl})`"></div>
               <div class="cart-row-product_description d-inline-block">
                 <p class="cart-row-product_title h5 text-light">{{item.product.title}}</p>
@@ -28,7 +31,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 cart-row-order">
+        <div class="col-md-4 cart-row-order" v-if="!carts.length == 0">
           <h3 class="myTitle">訂單摘要</h3>
             <div class="d-flex justify-content-between my-3">
               <span>小計</span>
@@ -114,6 +117,9 @@ export default {
     },
     goCheckout () {
       this.$router.push('./checkorder')
+    },
+    goShop () {
+      this.$router.push('./ShoppingList.vue')
     }
   },
   computed: {
@@ -150,6 +156,12 @@ p {
   border: 1px solid black
 }
 
+.hero_collection-choice > button {
+  margin: 3rem auto;
+  display: block;
+  max-width: 50%;
+}
+
 .cart-row-product_header {
   margin:0 1.5rem;
   text-align: center;
@@ -172,6 +184,7 @@ p {
   padding: 20px;
   margin: 2rem 0;
   background-color: #f4f4f4;
+  height: 50%;
 }
 
 .cart-row-product_img {
@@ -190,14 +203,6 @@ p {
 
 .deleteBtn {
   margin-left: 1rem;
-}
-
-@mixin clearfix() {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media screen and (max-width: 700px) {

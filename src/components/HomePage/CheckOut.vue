@@ -109,6 +109,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/dashboard.scss";
+
 p {
   margin:0 ;
 }
@@ -123,9 +125,5 @@ p {
 }
 .hero_collection ::before {
   border: 1px solid black
-}
-
-.alert-info {
-  background-color: #17a2b8;
 }
 </style>
